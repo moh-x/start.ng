@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form X</title>
+
+</head>
+
+<body>
+<div>
+    <img src="green.png" width="5%" height="5%">
+    <p>Welcome tho!</p>
+</div>
+    
+    <h3>Hit Me Up</h3> 
+
+    <form action="processform.php" method="POST">
+        <p>
+            <label for="first_name">First Name</label><br/>
+            <input type="text" name="first_name" placeholder="Enter Your First Name"/>
+        </p>
+        <p>
+            <label for="last_name">Last Name</label><br/>
+            <input type="text" name="last_name" placeholder="Enter Your Last Name"/>
+        </p>
+        <p>
+            <label for="email">Email</label><br/>
+            <input type="email" name="email" placeholder="Enter Your Email Address"/>
+        </p>
+        <p>
+            <label for="gender">Gender</label><br/>
+            <input type="radio" value="Female" name="gender"/>Female
+            <input type="radio" value="Male" name="gender"/>Male
+            <input type="radio" value="Neutral" name="gender"/>Prefer not to say
+        </p>
+        
+        <p>
+            <label for="department">Department</label><br/>
+            
+            <select name="department">
+                <option>Select Department</option>
+                <option>HR</option>
+                <option>Marketing</option>
+                <option>Board</option>
+                <option>Kitchen</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="message">Your Message</label><br/>
+            <textarea name="message"></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" name="Ts&Cs" required/>Confirm that you have read and agreed to our terms and conditions
+        </p>
+
+        <button type="submit">Send Message</button>
+        <button type="reset">Clear Message</button>
+    </form>
+
+</body>
+
+</html>
